@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         tools:context=".Readings">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/textCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:ems="10"
+        android:hint="Ingrese Codigo"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/textCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textCodigo"
+        android:layout_alignStart="@+id/textCodigo"
+        android:layout_below="@+id/textCodigo"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Ingrese Cliente"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/textLecturaInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textCliente"
+        android:layout_alignStart="@+id/textCliente"
+        android:layout_below="@+id/textCliente"
+        android:ems="10"
+        android:hint="Ingrese LecturaInicial"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/textLecturaFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textLecturaInicial"
+        android:layout_alignStart="@+id/textLecturaInicial"
+        android:layout_below="@+id/textLecturaInicial"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Ingrese Lectura Final"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/textPeriodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textLecturaFinal"
+        android:layout_alignStart="@+id/textLecturaFinal"
+        android:layout_below="@+id/textLecturaFinal"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Ingrese Periodo"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textPeriodo"
+        android:layout_alignStart="@+id/textPeriodo"
+        android:layout_below="@+id/textPeriodo"
+        android:layout_marginTop="16dp"
+        android:text="Ingresar" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button"
+            android:layout_alignStart="@+id/button"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="13dp"
+            android:text="Buscar Codigo" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignRight="@+id/button"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="18dp"
+            android:text="Ver Todo" />
+    </LinearLayout>
+
+</FrameLayout>
