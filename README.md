@@ -1,0 +1,2 @@
+# guaba-app-android-drive
+Aplicación que hace uso de Google Drive para sincronizar archivos gestionarlos en la aplicación móvil y como resultado obtiene otro archivo,usa una base de datos sqllite para almacenar la información de manera local ,su funcionalidad es offline se desarrollo la aplicación para que pueda gestionar la información sin uso de internet,El caso de uso es Recolectar informacion de medidores de agua en lugares alejados donde no existe internet,el usuario instala la aplicación en la tablet descarga la información y sale al campo a recolectar la información.
